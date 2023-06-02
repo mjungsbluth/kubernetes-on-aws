@@ -279,6 +279,9 @@ skipper_oauth2_ui_login_tokeninfo_keys: ""
 # skipper_cluster_scaling_schedules: "schedule1=3,schedule2=5"
 skipper_cluster_scaling_schedules: ""
 
+# Open Policy Agent
+skipper_open_policy_agent_enabled: "false"
+
 #
 # FabricGateway controller config
 #
