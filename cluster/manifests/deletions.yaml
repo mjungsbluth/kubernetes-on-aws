@@ -253,6 +253,11 @@ post_apply:
   namespace: kube-system
   kind: VerticalPodAutoscaler
 {{ end }}
+{{ if eq .ConfigItems.skipper_open_policy_agent_enabled "false" }}
+- kind: ConfigMap
+  name: open-policy-agent-config
+  namespace: kube-system
+{{ end }}
 {{ if eq .Cluster.ConfigItems.business_partner_service "false" }}
 - name: business-partner-service
   kind: ClusterRole
